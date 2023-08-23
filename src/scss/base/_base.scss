@@ -1,0 +1,205 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+h1 {
+  letter-spacing: -0.04em;
+
+  * {
+    letter-spacing: initial;
+  }
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  transition: all 0.3s;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+button {
+  cursor: pointer;
+  outline: none !important;
+  border: none;
+  background: transparent;
+}
+
+svg,
+path,
+circle {
+  transition: all 0.3s;
+}
+
+input {
+  outline: none;
+  border: none;
+  box-shadow: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth !important;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: var(--bg-primary-colour);
+  color: var(--text-primary-colour);
+  @include regular;
+}
+
+.outer-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.container.full-container {
+  width: 100%;
+  max-width: 1920px;
+  padding: 0 63px;
+
+  @include respond(tablet) {
+    padding: 0 32px;
+  }
+
+  @include respond(mobilemini) {
+    padding: 0 24px;
+  }
+}
+
+.icon {
+  transition: all 0.3s;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+.btn {
+  color: var(--text-primary-inverted);
+  background-color: var(--brand-primary-colour);
+  border-radius: 4px;
+}
+
+// Title
+.title {
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: -0.02em;
+  color: var(--text-primary-colour);
+}
+h1.title {
+  font-size: 46px;
+
+  @include respond(mobilemini) {
+    font-size: 26px;
+  }
+}
+
+h2.title {
+  font-size: 32px;
+  @include respond(mobilemini) {
+    font-size: 22px;
+  }
+}
+
+h3.title {
+  font-size: 28px;
+  @include respond(mobilemini) {
+    font-size: 20px;
+  }
+}
+h4.title {
+  font-size: 24px;
+  @include respond(mobilemini) {
+    font-size: 18px;
+  }
+}
+h5.title {
+  font-size: 20px;
+  @include respond(mobilemini) {
+    font-size: 16px;
+  }
+}
+h6.title {
+  font-size: 18px;
+  @include respond(mobilemini) {
+    font-size: 16px;
+  }
+}
+
+// Body
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1240px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}

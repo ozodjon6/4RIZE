@@ -1,0 +1,39 @@
+.header {
+    padding: 13px 0;
+
+    @include respond(phone) {
+      padding: 18px 0;
+    }
+
+    @include respond(mobilemini) {
+      padding: 8.5px 0;
+    }
+}
+
+.header__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__button {
+  .btn {
+    margin-right: 32px;
+    padding: 12px 16px;
+    font-size: 14px;
+    @include bold;
+  }
+}
+
+.header__button-lang {
+  .icon {
+    margin-right: 8px;
+  }
+
+  .text {
+    font-size: 16px;
+    color: var(--text-secondary-colour);
+    line-height: 25.6px;
+    letter-spacing: -1%;
+  }
+}

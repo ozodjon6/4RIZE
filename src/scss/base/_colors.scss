@@ -1,0 +1,45 @@
+:root {
+
+    // text
+    --text-primary-inverted: #FFFFFF;
+    --text-primary-colour: #161F2D;
+    --text-secondary-colour: #525B60;
+    --text-tertiary-colour: #7F8487;
+
+    // Brand
+    --brand-primary-colour: #1929B9;
+    --brand-secondary-colour: #D21062;
+
+    // BG
+    --bg-primary-colour: #FFFFFF;
+    --bg-secondary-colour: #F2F3F6;
+    --bg-dark-transparent-colour: #00000080;
+
+    // Icons
+    --icons-primary-colour: #161F2D;
+    --icons-secondary-colour: #848E94;
+    --icons-brand-primary-colour: #1929B9;
+    --icons-primary-inverted-colour: #FFFFFF;
+
+    // Border lines
+    --primary-borderline-colour: #EDEBEF;
+
+    // Links
+    --link-primary-colour: #1929B9;
+    --link-secondary-colour: #161F2D;
+    --link-tertiary-colour: #525B60;
+
+    // Links hove
+    --link-primary-hover-colour: #4053FF;
+    --link-secondary-hover-colour: #525B60;
+    --link-tertiary-hover-colour: #788085;
+
+    // System
+    --error-colour: #FE6767;
+    --warning-colour: #ECCC27;
+    --success-colour: #10C76F;
+
+    --error-dimmed-colour: #FFCCCC;
+    --warning-dimmed-colour: #F4E285;
+    --success-dimmed-colour: #AFEFD0;
+}
