@@ -17,17 +17,35 @@
 }
 
 .header__button {
-  .btn {
+  @include respond(mobilemini) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    max-width: 50%;
+    width: 100%;
+  }
+  .btn-demo {
     margin-right: 32px;
     padding: 12px 16px;
     font-size: 14px;
     @include bold;
+
+    @include respond(mobilemini) {
+      margin-right: 0;
+      padding: 8px;
+      font-size: 12px;
+    }
   }
 }
 
 .header__button-lang {
   .icon {
     margin-right: 8px;
+
+    @include respond(mobilemini) {
+      width: 16px;
+      height: 16px;
+      margin-right: 4px;
+    }
   }
 
   .text {
@@ -35,5 +53,14 @@
     color: var(--text-secondary-colour);
     line-height: 25.6px;
     letter-spacing: -1%;
+  }
+}
+
+.header__logo {
+  .icon {
+    @include respond(mobilemini) {
+      width: 79px;
+      height: 28px;
+    }
   }
 }

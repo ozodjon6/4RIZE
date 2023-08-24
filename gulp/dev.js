@@ -12,6 +12,8 @@ const webpack = require('webpack-stream');
 const babel = require('gulp-babel');
 const imagemin = require('gulp-imagemin');
 const changed = require('gulp-changed');
+const beautify = require('gulp-jsbeautifier');
+const prettify = require('gulp-jsbeautifier');
 
 gulp.task('clean:dev', function (done) {
 	if (fs.existsSync('./build/')) {
@@ -51,7 +53,7 @@ gulp.task('html:dev', function () {
 gulp.task('sass:dev', function () {
 	return (
 		gulp
-			.src('./src/scss/*.scss')
+		.src([`./src/scss/*.scss`, `./src/scss/bootstrap-grid.min.css`])
 			.pipe(changed('./build/css/'))
 			.pipe(plumber(plumberNotify('SCSS')))
 			.pipe(sourceMaps.init())
@@ -89,7 +91,8 @@ gulp.task('js:dev', function () {
 		.src('./src/js/*.js')
 		.pipe(changed('./build/js/'))
 		.pipe(plumber(plumberNotify('JS')))
-		// .pipe(babel())
+		.pipe(beautify())
+		.pipe(prettify())
 		.pipe(webpack(require('./../webpack.config.js')))
 		.pipe(gulp.dest('./build/js/'));
 });

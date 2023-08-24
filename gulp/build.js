@@ -88,10 +88,7 @@ gulp.task('images:build', function () {
 	return gulp
 		.src('./src/assets/**/*')
 		.pipe(changed('./build/assets/'))
-		.pipe(gulp.dest('./build/assets/'))
-		.pipe(gulp.src('./src/assets/**/*'))
-		.pipe(changed('./build/assets/'))
-		.pipe(imagemin({ verbose: true }))
+		// .pipe(imagemin({ verbose: true }))
 		.pipe(gulp.dest('./build/assets/'));
 });
 

@@ -1,2 +1,2 @@
-import exampleJs from './modules/example.js';
-exampleJs();
+import main from './modules/main.js';
+main();
