@@ -14,7 +14,20 @@
 			  <div class="wrapper">
 				<header class="header">
 				  <div class="container full-container">
-					@@include('blocks/header.html')
+					<div class="header__row">
+    <div class="header__logo">
+        <svg class="icon" width="120" height="42">
+            <use xlink:href="./assets/icons/sprite.svg#logo"></use>
+        </svg>
+    </div>
+    <div class="header__button d-flex">
+        <button class="btn">Получить демо доступ</button>
+        <div class="header__button-lang d-flex a-center">
+            <img class="icon" src="./assets/icons/flag.svg" alt="">
+            <span class="text">Eng</span>
+        </div>
+    </div>
+</div>
 				  </div>
 				</header>
 				<main class="main-page">
@@ -22,7 +35,10 @@
 			  </div>
 			  <footer class="footer">
 				<div class="container full-container">
-					@@include('blocks/footer.html')
+					<footer class="footer__row">
+	<h2 class="title">Footer</h2>
+</footer>
+
 				</div>
 			  </footer>
 			</div>
