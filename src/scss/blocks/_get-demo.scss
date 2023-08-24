@@ -1,0 +1,39 @@
+.get-demo__row {
+    padding: 64px;
+    text-align: left;
+    border: 2px solid var(--border-line-color);
+    border-radius: 10px;
+
+    .title {
+        margin-bottom: 12px;
+    }
+
+    .text-body {
+        margin-bottom: 32px;
+
+        @include respond(mobilemini) {
+          margin-bottom: 24px;
+          font-size: 16px;
+        }
+    }
+
+    .btn {
+        font-size: 16px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        max-width: 20rem;
+        width: 100%;
+
+        @include respond(mobilemini) {
+          max-width: 24rem;
+        }
+    }
+
+    @include respond(phone) {
+      padding: 60px 64px;
+    }
+
+    @include respond(mobilemini) {
+      padding: 24px;
+    }
+}

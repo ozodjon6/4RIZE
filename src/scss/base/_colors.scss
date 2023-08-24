@@ -8,12 +8,19 @@
 
     // Brand
     --brand-primary-colour: #1929B9;
+    --brand-primary-hover-colour: #16228D;
     --brand-secondary-colour: #D21062;
 
     // BG
     --bg-primary-colour: #FFFFFF;
     --bg-secondary-colour: #F2F3F6;
     --bg-dark-transparent-colour: #00000080;
+
+    // BG Button
+    --bg-brown-color: #EFD592;
+    --bg-green-color: #BBEF92;
+    --bg-blue-color: #9FD7FF;
+    --bg-pink-color: #FFBAF0;
 
     // Icons
     --icons-primary-colour: #161F2D;
@@ -23,13 +30,14 @@
 
     // Border lines
     --primary-borderline-colour: #EDEBEF;
+    --border-line-color: #EFEFEF;
 
     // Links
     --link-primary-colour: #1929B9;
     --link-secondary-colour: #161F2D;
     --link-tertiary-colour: #525B60;
 
-    // Links hove
+    // Links hover
     --link-primary-hover-colour: #4053FF;
     --link-secondary-hover-colour: #525B60;
     --link-tertiary-hover-colour: #788085;
