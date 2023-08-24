@@ -15,7 +15,6 @@
         align-items: center;
 
         @include respond(mobilemini) {
-          margin-bottom: 16px;
           flex-direction: column;
           align-items: flex-start;
         }
@@ -28,12 +27,13 @@
               margin-bottom: 24px;
             }
         }
-
-        .footer__link {
-            font-size: 14px;
-            color: var(--link-primary-colour);
-        }
     }
+
+    .footer__link {
+      font-size: 14px;
+      color: var(--link-primary-colour);
+      display: block;
+  }
 
     .text-body {
         font-size: 14px;

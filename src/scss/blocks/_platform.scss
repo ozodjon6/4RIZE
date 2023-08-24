@@ -1,4 +1,7 @@
 .section.platform {
+  @include respond(mobilemini) {
+    margin-bottom: 8rem;
+  }
     .platform__inner {
         display: flex;
         flex-direction: column;

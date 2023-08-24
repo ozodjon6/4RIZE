@@ -1,3 +1,11 @@
+.main-page {
+  padding: 12rem 0;
+
+  @include respond(mobilemini) {
+    padding: 8rem 0;
+  }
+}
+
 .main-page__heading,
 .section {
   margin-bottom: 12rem;
@@ -36,5 +44,6 @@
     .text-body {
         text-align: left;
         line-height: 28.8px;
+        color: var(--text-primary-colour);
     }
 }

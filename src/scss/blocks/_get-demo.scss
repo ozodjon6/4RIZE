@@ -1,12 +1,17 @@
+.section.get-demo {
+  margin-bottom: 0;
+  .get-demo__row {
+    .title {
+      margin-bottom: 12px;
+    }
+  }
+}
+
 .get-demo__row {
     padding: 64px;
     text-align: left;
     border: 2px solid var(--border-line-color);
     border-radius: 10px;
-
-    .title {
-        margin-bottom: 12px;
-    }
 
     .text-body {
         margin-bottom: 32px;
@@ -18,11 +23,15 @@
     }
 
     .btn {
-        font-size: 16px;
+        font-size: 14px;
         padding-top: 16px;
         padding-bottom: 16px;
         max-width: 20rem;
         width: 100%;
+
+        @include respond(phone) {
+          font-size: 16px;
+        }
 
         @include respond(mobilemini) {
           max-width: 24rem;
