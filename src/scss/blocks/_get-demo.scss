@@ -24,13 +24,15 @@
 
     .btn {
         font-size: 14px;
-        padding-top: 16px;
-        padding-bottom: 16px;
         max-width: 20rem;
         width: 100%;
 
         @include respond(phone) {
           font-size: 16px;
+
+          &.x-large {
+            line-height: 62px;
+          }
         }
 
         @include respond(mobilemini) {

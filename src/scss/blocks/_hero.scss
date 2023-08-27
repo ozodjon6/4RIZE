@@ -56,13 +56,12 @@
     }
   }
   .btn {
-    padding: 20px 37px;
-    line-height: 22.4px;
+    max-width: 180px;
+    width: 100%;
     margin-bottom: 24px;
 
     @include respond(tabdesk) {
       max-width: 342px;
-      width: 100%;
     }
 
     @include respond(phone) {
