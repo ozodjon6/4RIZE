@@ -38,6 +38,16 @@
 }
 
 .header__button-lang {
+  height: 26px;
+  display: block;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @include respond(mobilemini) {
+    height: 22px;
+  }
   .icon {
     margin-right: 8px;
 
@@ -50,8 +60,9 @@
 
   .text {
     font-size: 16px;
-    color: var(--text-secondary-colour);
+    color: var(--link-secondary-colour);
     line-height: 25.6px;
+    width: 30px;
 
     @include respond(mobilemini) {
       font-size: 14px;
