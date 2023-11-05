@@ -45,3 +45,19 @@
   line-height: 23px;
   line-height: 0 4px;
 }
+
+.btn.blue {
+  background-color: var(--brand-primary-colour);
+
+  &:hover {
+    background-color: var(--brand-primary-hover-colour);
+  }
+}
+
+.btn.red {
+  background-color: var(--brand-secondary-colour);
+
+  &:hover {
+    background-color: var(--button-color-button-accent-hover);
+  }
+}

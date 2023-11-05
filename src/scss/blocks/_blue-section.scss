@@ -1,0 +1,66 @@
+/** @format */
+
+.blue-section {
+  margin-bottom: 120px;
+  padding: 32px;
+  overflow: hidden;
+  background-color: var(--basic-primary-primary-700);
+  color: var(--text-primary-inverted);
+  border-radius: 8px;
+
+  &.with-image {
+    background-image: url(../../assets/image/blue-section.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+
+    @include respond(tabdesk) {
+      background-position: center right -25%;
+    }
+
+    @include respond(mobilemini) {
+      background-image: none;
+    }
+  }
+
+  picture {
+    display: none;
+  }
+
+  @include respond(mobilemini) {
+    margin-bottom: 64px;
+    picture {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 32px;
+    }
+  }
+
+  .blue-section__content {
+    max-width: 466px;
+
+    @include respond(mobilemini) {
+      .btn.xx-large {
+        line-height: 44px;
+      }
+    }
+  }
+
+  h3.title {
+    color: inherit;
+    margin-bottom: 16px;
+  }
+}
+
+.blue-section__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  letter-spacing: -0.16px;
+  margin-bottom: 40px;
+  display: block;
+
+  @include respond(mobilemini) {
+    margin-bottom: 16px;
+  }
+}
