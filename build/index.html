@@ -1,37 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Landing Home Page</title>
-	<link rel="stylesheet" href="./css/bootstrap-grid.min.css">
-	<link rel="stylesheet" href="./css/main.css" />
-</head>
-
-<body>
-	<div id="root">
-		<div class="outer-wrapper">
-			<div class="wrapper">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Landing Home Page</title>
+		<link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body>
+		<div id="root">
+			<div class="outer-wrapper">
+			  <div class="wrapper">
 				<header class="header">
-					<div class="container">
-						<div class="header__row">
-							<div class="header__logo">
-								<svg class="icon" width="120" height="42">
-									<use xlink:href="./assets/icons/sprite.svg#logo"></use>
-								</svg>
-							</div>
-							<div class="header__button d-flex a-center">
-								<button class="btn btn-demo large">Получить демо доступ</button>
-								<a href="" class="header__button-lang d-flex a-center">
-									<img class="icon" id="languageFlag" src="./assets/icons/flag.svg" alt="" />
-									<span class="text" id="languageText">Eng</span>
-								</a>
-							</div>
-						</div>
+				  <div class="container">
+					<div class="header__row">
+  <div class="d-flex a-center">
+    <div class="header__logo">
+      <svg class="icon" width="120" height="42">
+        <use xlink:href="./assets/icons/sprite.svg#logo"></use>
+      </svg>
+    </div>
+    <ul class="top-menu">
+      <li class="top-menu__item">
+        <a href="#" class="top-menu__link text-default text-x-small">Главная</a>
+      </li>
+      <li class="top-menu__item">
+        <a href="#" class="top-menu__link text-default text-x-small">О сервисе</a>
+      </li>
+      <li class="top-menu__item">
+        <a href="#" class="top-menu__link text-default text-x-small">Финтех блог</a>
+      </li>
+    </ul>
+  </div>
+  <div class="header__button d-flex a-center">
+    <button class="btn btn-demo large">Получить демо доступ</button>
+    <a href="" class="header__button-lang d-flex a-center">
+      <img class="icon" id="languageFlag" src="./assets/icons/flag.svg" alt="" />
+      <span class="text" id="languageText">Eng</span>
+    </a>
+  </div>
+</div>
 
-					</div>
+				  </div>
 				</header>
 				<section class="hero-page">
 					<div class="container">
@@ -42,19 +53,16 @@
 									<span class="text-body">Создай приложение, которое принесет деньги бизнесу</span>
 									<div class="d-lg-none">
 										<picture>
-											<source media="(max-width: 767px)"
-												srcset="./assets/image/hero.png 1x, ./assets/image/hero@2x.png 2x">
-											<img src="./assets/image/hero-table.png"
-												srcset="./assets/image/hero-table@2x.png" alt="Picture">
+											<source media="(max-width: 767px)" srcset="./assets/image/hero.png 1x, ./assets/image/hero@2x.png 2x">
+											<img src="./assets/image/hero-table.png" srcset="./assets/image/hero-table@2x.png" alt="Picture">
 										</picture>
-
+										
 									</div>
 								</div>
 								<div class="hero-page__demo-access">
 									<button class="btn xx-large">Демо доступ</button>
 									<div class="access-wrapper">
-										<span class="text-body">У наc в базе все игроки локального и международного
-											рынка</span>
+										<span class="text-body">У наc в базе все игроки локального и международного рынка</span>
 										<ul class="payment-apps d-flex a-center">
 											<li class="payment-apps__item">
 												<svg class="icon icon-uzum" width="108" height="43">
@@ -87,17 +95,13 @@
 								<div class="col-lg-6">
 									<div class="section__content">
 										<h2 class="title">Все приложения конкурентов на одной платформе</h2>
-										<span class="text-body">Скриншоты и видео записи продуктов более 50 местных
-											банков и платежных компаний на одной платформе для конкурентного
-											анализа.</span>
+										<span class="text-body">Скриншоты и видео записи продуктов более 50 местных банков и платежных компаний на одной платформе для конкурентного анализа.</span>
 									</div>
 								</div>
 								<div class="col-lg-6">
 									<picture>
-										<source media="(max-width: 576px)"
-											srcset="./assets/image/item-1-mobile.png 1x, ./assets/image/item-1-mobile@2x.png 2x">
-										<img src="./assets/image/item-1.png" srcset="./assets/image/item-1@2x.png"
-											alt="Picture">
+										<source media="(max-width: 576px)" srcset="./assets/image/item-1-mobile.png 1x, ./assets/image/item-1-mobile@2x.png 2x">
+										<img src="./assets/image/item-1.png" srcset="./assets/image/item-1@2x.png" alt="Picture">
 									</picture>
 								</div>
 							</div>
@@ -109,17 +113,13 @@
 								<div class="col-lg-6">
 									<div class="section__content">
 										<h2 class="title">Готовый анализ от финтех экспертов</h2>
-										<span class="text-body">Анализ 1,000 User Journey (Пользовательский путь) от
-											Финтех экспертов: Открытия счетов и карты, платежи, переводы, вклады,
-											безопасность и другие.</span>
+										<span class="text-body">Анализ 1,000 User Journey (Пользовательский путь) от Финтех экспертов: Открытия счетов и карты, платежи, переводы, вклады, безопасность и другие.</span>
 									</div>
 								</div>
 								<div class="col-lg-6">
 									<picture>
-										<source media="(max-width: 576px)"
-											srcset="./assets/image/item-2-mobile.png 1x, ./assets/image/item-2-mobile@2x.png 2x">
-										<img src="./assets/image/item-2.png" srcset="./assets/image/item-2@2x.png"
-											alt="Picture">
+										<source media="(max-width: 576px)" srcset="./assets/image/item-2-mobile.png 1x, ./assets/image/item-2-mobile@2x.png 2x">
+										<img src="./assets/image/item-2.png" srcset="./assets/image/item-2@2x.png" alt="Picture">
 									</picture>
 								</div>
 							</div>
@@ -131,17 +131,14 @@
 								<div class="col-lg-6">
 									<div class="section__content">
 										<h2 class="title">Опыт зарубежных банков</h2>
-										<span class="text-body">Доступ к приложениям передовых банков и финтех компаний
-											в Европе, США и Центрпльной Азии.
+										<span class="text-body">Доступ к приложениям передовых банков и финтех компаний в Европе, США и Центрпльной Азии.
 											Новые идеи и вдохновения для развития вашего продукта.</span>
 									</div>
 								</div>
 								<div class="col-lg-6">
 									<picture>
-										<source media="(max-width: 576px)"
-											srcset="./assets/image/item-3-mobile.png 1x, ./assets/image/item-3-mobile@2x.png 2x">
-										<img src="./assets/image/item-3.png" srcset="./assets/image/item-3@2x.png"
-											alt="Picture">
+										<source media="(max-width: 576px)" srcset="./assets/image/item-3-mobile.png 1x, ./assets/image/item-3-mobile@2x.png 2x">
+										<img src="./assets/image/item-3.png" srcset="./assets/image/item-3@2x.png" alt="Picture">
 									</picture>
 								</div>
 							</div>
@@ -153,85 +150,81 @@
 								<div class="col-lg-6">
 									<div class="section__content">
 										<h2 class="title">Экономия денег и время на разработку</h2>
-										<span class="text-body">Обновляемая база данных для получения референсов по
-											существующим и отдельным банковским решениям. </span>
+										<span class="text-body">Обновляемая база данных для получения референсов по существующим и отдельным банковским решениям. </span>
 									</div>
 								</div>
 								<div class="col-lg-6">
 									<picture>
-										<source media="(max-width: 576px)"
-											srcset="./assets/image/item-4-mobile.png 1x, ./assets/image/item-4-mobile@2x.png 2x">
-										<img src="./assets/image/item-4.png" srcset="./assets/image/item-4@2x.png"
-											alt="Picture">
+										<source media="(max-width: 576px)" srcset="./assets/image/item-4-mobile.png 1x, ./assets/image/item-4-mobile@2x.png 2x">
+										<img src="./assets/image/item-4.png" srcset="./assets/image/item-4@2x.png" alt="Picture">
 									</picture>
 								</div>
 							</div>
 						</div>
 					</section>
 					<section class="section platform">
-						<div class="container">
-							<div class="platform__inner">
-								<h1 class="title">Наш платформа для</h1>
-								<ul class="platform__services">
-									<div class="platform__wrap">
-										<li class="platform__item brown">
-											<h2 class="title">Финтех</h2>
-										</li>
-										<li class="platform__item green">
-											<h2 class="title">Банков</h2>
-										</li>
-									</div>
-									<div class="platform__wrap">
-										<li class="platform__item blue">
-											<h2 class="title">Консалтинг</h2>
-										</li>
-										<li class="platform__item pink">
-											<h2 class="title">ИТ компании</h2>
-										</li>
-									</div>
-								</ul>
-								<span class="text-body">и всем кто заинтересован принести прибыл в бизнес</span>
-							</div>
-						</div>
-					</section>
+    <div class="container">
+        <div class="platform__inner">
+            <h1 class="title">Наш платформа для</h1>
+            <ul class="platform__services">
+                <div class="platform__wrap">
+                    <li class="platform__item brown">
+                        <h2 class="title">Финтех</h2>
+                    </li>
+                    <li class="platform__item green">
+                        <h2 class="title">Банков</h2>
+                    </li>
+                </div>
+                <div class="platform__wrap">
+                    <li class="platform__item blue">
+                        <h2 class="title">Консалтинг</h2>
+                    </li>
+                    <li class="platform__item pink">
+                        <h2 class="title">ИТ компании</h2>
+                    </li>
+                </div>
+            </ul>
+            <span class="text-body">и всем кто заинтересован принести прибыл в бизнес</span>
+        </div>
+    </div>
+</section>
 					<section class="section get-demo">
-						<div class="container">
-							<div class="get-demo__row">
-								<h1 class="title">
-									Получить демо доступ
-								</h1>
-								<span class="text-body">У наc в базе все игроки локального и международного рынка</span>
-								<button class="btn x-large">Регистрация</button>
-							</div>
-						</div>
-					</section>
+    <div class="container">
+        <div class="get-demo__row">
+            <h1 class="title">
+                Получить демо доступ
+            </h1>
+            <span class="text-body">У наc в базе все игроки локального и международного рынка</span>
+            <button class="btn x-large">Регистрация</button>
+        </div>
+    </div>
+</section>
 				</main>
-			</div>
-			<footer class="footer">
+			  </div>
+			  <footer class="footer">
 				<div class="container">
 					<footer class="footer__row">
-						<ul class="footer__list">
-							<li class="footer__item">
-								<svg class="icon" width="68" height="24">
-									<use xlink:href="./assets/icons/sprite.svg#logo"></use>
-								</svg>
-							</li>
-							<li class="footer__item">
-								<a href="" class="footer__link">О сервисе</a>
-							</li>
-							<li class="footer__item">
-								<a href="" class="footer__link">Блог</a>
-							</li>
-						</ul>
-						<span class="text-body">Иследовательская база финтех проектов СНГ и международных игроков</span>
-						<a href="mailto:info@4rize.com" class="footer__link">info@4rize.com</a>
-					</footer>
+	<ul class="footer__list">
+		<li class="footer__item">
+			<svg class="icon" width="68" height="24">
+				<use xlink:href="./assets/icons/sprite.svg#logo"></use>
+			</svg>
+		</li>
+		<li class="footer__item">
+			<a href="" class="footer__link">О сервисе</a>
+		</li>
+		<li class="footer__item">
+			<a href="" class="footer__link">Блог</a>
+		</li>
+	</ul>
+	<span class="text-body">Иследовательская база финтех проектов СНГ и международных игроков</span>
+	<a href="mailto:info@4rize.com" class="footer__link">info@4rize.com</a>
+</footer>
 
 				</div>
-			</footer>
-		</div>
-	</div>
-	<script src="./js/index.js"></script>
-</body>
-
+			  </footer>
+			</div>
+		  </div>
+		<script src="./js/index.js"></script>
+	</body>
 </html>

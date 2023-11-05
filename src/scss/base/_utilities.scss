@@ -1,3 +1,5 @@
+/** @format */
+
 .d-flex {
   display: flex;
 }
@@ -10,6 +12,10 @@
   justify-content: space-between;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .btn.xx-large {
   line-height: 62px;
   padding: 0 2rem;
@@ -17,7 +23,7 @@
 
 .btn.x-large {
   line-height: 52px;
-  padding: 0 16px
+  padding: 0 16px;
 }
 
 .btn.large {
