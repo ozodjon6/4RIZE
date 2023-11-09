@@ -16,13 +16,28 @@
     font-weight: 400;
     line-height: 160%; /* 19.2px */
     letter-spacing: -0.12px;
-    background-color: var(--bg-paginations-color);
-    border: 1px solid var(--paginations-borderline-colour);
+    background-color: var(--basic-neutral-neutral-20);
+    border: 1px solid var(--basic-neutral-neutral-100);
     border-radius: 3px;
+    transition: all 0.3s;
 
     &.active {
-      background-color: var(--bg-paginations-active-color);
+      background-color: var(--basic-neutral-neutral-200);
       border: 0 none;
+    }
+
+    &:active {
+      background-color: var(--basic-neutral-neutral-200);
+    }
+
+    &.active:hover {
+      background-color: var(--basic-neutral-neutral-200);
+      border-color: var(--basic-neutral-neutral-300);
+    }
+
+    &:hover {
+      border-color: var(--basic-neutral-neutral-300);
+      background-color: var(--basic-neutral-neutral-20);
     }
 
     &:not(:last-child) {
