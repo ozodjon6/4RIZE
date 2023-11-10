@@ -67,6 +67,12 @@
 .card-news__status {
   margin-bottom: 9px;
 
+  .status-theme {
+    @include respond(mobilemini) {
+      border-right: 0 none;
+    }
+  }
+
   @include respond(mobilemini) {
     display: flex;
     flex-direction: column;
@@ -77,7 +83,7 @@
 
 .status-theme {
   color: var(--link-tertiary-colour);
-  border-right: 1px solid var(--link-tertiary-colour);
+  border-right: 1px solid var(--border-primary-borderline-colour);
   margin-right: 16px;
   padding-right: 16px;
   font-size: 14px;

@@ -37,6 +37,10 @@
     }
   }
 
+  &:hover .similar-articles__item-content .title {
+    color: var(--link-primary-hover-colour);
+  }
+
   .similar-articles__item-content {
     .title {
       color: var(--link-primary-colour);

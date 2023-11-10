@@ -8,6 +8,23 @@
   }
 }
 
+.main-page.blog-page,
+.main-page.blog-inside {
+  padding-top: 64px;
+  padding-bottom: 0;
+
+  @include respond(mobilemini) {
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+}
+
+.main-page.blog-page {
+  .main-page__heading {
+    text-align: left;
+  }
+}
+
 .main-page__heading,
 .section {
   margin-bottom: 12rem;
@@ -43,19 +60,5 @@
     text-align: left;
     line-height: 28.8px;
     color: var(--text-primary-colour);
-  }
-}
-
-.main-page.blog-page {
-  padding: 64px 0 120px;
-  @include respond(mobilemini) {
-    padding: 40px 0 80px;
-  }
-  .main-page__heading {
-    text-align: left;
-
-    @include respond(mobilemini) {
-      margin-bottom: 4rem;
-    }
   }
 }

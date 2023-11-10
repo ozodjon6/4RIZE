@@ -8,6 +8,10 @@
 .blog-inside__inner {
   margin-bottom: 120px;
 
+  @include respond(mobilemini) {
+    margin-bottom: 64px;
+  }
+
   .title {
     margin-bottom: 12px;
   }
@@ -15,6 +19,21 @@
 
 .blog-inside__heading {
   margin-bottom: 68px;
+
+  .blog-inside__top {
+    .status-theme {
+      font-weight: 700;
+      color: var(--link-tertiary-colour);
+      font-size: 14px;
+    }
+    .status-date {
+      color: var(--text-secondary-colour);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 160%;
+      letter-spacing: -0.14px;
+    }
+  }
 }
 
 .blog-inside__top {
