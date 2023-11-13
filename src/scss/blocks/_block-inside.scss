@@ -1,5 +1,13 @@
 /** @format */
 
+.blog-page__inner {
+  margin-bottom: 120px;
+
+  @include respond(mobilemini) {
+    margin-bottom: 80px;
+  }
+}
+
 .main-page.blog-inside {
   max-width: 816px;
   margin: 0 auto;

@@ -7,28 +7,51 @@
   background-color: var(--basic-primary-primary-700);
   color: var(--text-primary-inverted);
   border-radius: 8px;
+  position: relative;
 
-  &.with-image {
-    background-image: url(../assets/image/blue-section.png);
-    background-repeat: no-repeat;
-    background-position: center right;
+  .picture {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    max-width: 345px;
+    width: 100%;
+    height: 242px;
+    max-width: max-content;
 
     @include respond(tabdesk) {
-      background-position: center right -25%;
+      right: -15%;
+    }
+
+    .picture__desktop {
+      @include respond(mobilemini) {
+        display: none;
+      }
+    }
+
+    .picture__mobile {
+      display: none;
+
+      @include respond(mobilemini) {
+        display: block;
+      }
     }
 
     @include respond(mobilemini) {
-      background-image: none;
+      position: unset;
+      margin: 0 auto;
+      height: 100%;
     }
-  }
 
-  picture {
-    display: none;
+    source,
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
   }
 
   @include respond(mobilemini) {
     margin-bottom: 64px;
-    picture {
+    .picture {
       display: flex;
       align-items: center;
       justify-content: center;
