@@ -19,6 +19,14 @@
   }
 }
 
+.main-page.blog-inside {
+  margin-bottom: 12rem;
+
+  @include respond(mobilemini) {
+    margin-bottom: 8rem;
+  }
+}
+
 .main-page.blog-page {
   .main-page__heading {
     text-align: left;

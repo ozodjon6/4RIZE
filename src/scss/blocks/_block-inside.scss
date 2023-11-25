@@ -33,6 +33,12 @@
       font-weight: 700;
       color: var(--link-tertiary-colour);
       font-size: 14px;
+      text-decoration: none;
+      transition: all 0.3s;
+
+      &:hover {
+        color: var(--link-tertiary-hover-colour);
+      }
     }
     .status-date {
       color: var(--text-secondary-colour);

@@ -1,20 +1,26 @@
-function changeOnResizeText() {
-    const btnDemo = document.querySelector('.btn-demo');
+/** @format */
 
-    if (window.matchMedia('(max-width: 767px)').matches) {
-        btnDemo.textContent = 'Демо';
+function changeOnResizeText() {
+    const btnDemo = document.querySelector(".btn-demo");
+
+    if (window.matchMedia("(max-width: 767px)").matches) {
+        btnDemo.textContent = "Демо";
     } else {
-        btnDemo.textContent = 'Получить демо доступ';
+        btnDemo.textContent = "Получить демо доступ";
     }
 }
 
 function changeTextAndIcon() {
-    const btnChangeLanguage = document.querySelector('.header__button-lang');
-    const languageFlag = document.getElementById('languageFlag');
-    const languageText = document.getElementById('languageText');
+    const btnChangeLanguage = document.querySelector(".header__button-lang");
+    const languageFlag = document.getElementById("languageFlag");
+    const languageText = document.getElementById("languageText");
 
-    const texts = ['Eng', 'Rus', 'Uzb'];
-    const icons = ['./assets/icons/flag.svg', './assets/icons/flag-ru.svg', './assets/icons/flag-uz.svg', ]
+    const texts = ["Eng", "Rus", "Uzb"];
+    const icons = [
+        "./assets/icons/flag.svg",
+        "./assets/icons/flag-ru.svg",
+        "./assets/icons/flag-uz.svg",
+    ];
 
     let currentIndex = 0;
 
@@ -29,11 +35,21 @@ function changeTextAndIcon() {
         languageText.textContent = texts[currentIndex];
     }
 
-    btnChangeLanguage.addEventListener('click', (e) => {
+    btnChangeLanguage.addEventListener("click", (e) => {
         e.preventDefault();
         changeLanguage();
     });
 }
+
+(function() {
+    const hashtagNewsLink = document.querySelectorAll(".hashtag-news__link");
+
+    hashtagNewsLink.forEach(function(item) {
+        item.addEventListener("click", (e) => {
+            e.preventDefault();
+        });
+    });
+})();
 
 changeTextAndIcon();
 changeOnResizeText();

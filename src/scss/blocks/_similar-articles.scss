@@ -10,7 +10,7 @@
 }
 .similar-articles__list {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 
   @include respond(mobilemini) {
     flex-direction: column;
@@ -22,6 +22,7 @@
   align-items: flex-start;
   transition: all 0.3s ease;
   gap: 16px;
+  flex: 1;
 
   @include respond(mobilemini) {
     gap: 12px;
